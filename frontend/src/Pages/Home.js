@@ -2,11 +2,40 @@ function HomePage() {
   return (
     <div className="Home">
       <section className="Hero-home">
-        <h1>Hello!</h1>
-        <p>I'm Theodore.</p>
+        <div className="Hero-text">
+        <h1>Frontend-focused Web Developer</h1>
+        <p>With a passion for designing and building beauitful products.</p>
+        </div>
       </section>
       <section className="intro">
-        <h1>Hi, I am an intro.</h1>
+        <h1>Frontend-focused Web Developer</h1>
+        <p>With a passion for designing and building beauitful products.</p>
+        <div className="what-i-do">
+          <div className="column">
+            <h2>Design</h2>
+            <p>I am passionate about color, layout and typography.</p>
+            <br/>
+            <h2>Tools</h2>
+            <p>Sketch</p>
+            <p>Figma</p>
+          </div>
+          <div className="column">
+            <h2>Frontend Development</h2>
+            <p>I enjoy building applications from scratch.</p>
+            <br />
+            <h2>Languages</h2>
+            <p> HTML, CSS, JavaScript</p>
+            <br />
+            <h2>Tools</h2>
+            <p> Visual Studio Code GitHub Material ui BootStrap React</p>
+          </div>
+          <div className="column">
+            <h2>Client Services & Colllaboration</h2>
+            <p> My experience </p>
+          </div>
+        </div>
+        <br />
+        <p> </p>
         <p>Intro</p>
       </section>
       <section className="resume">
@@ -15,9 +44,10 @@ function HomePage() {
       <section className="projects">
         <h1>Projects will go here</h1>
       </section>
-    <section className="Contact-me">
-        Contact form!
-    </section>
+      <section className="Contact-me">Contact form!</section>
+      <secction className="Footer">
+        Footer here
+      </secction>
     </div>
   );
 }

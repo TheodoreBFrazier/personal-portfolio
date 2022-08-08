@@ -40,4 +40,39 @@ p {
   width: 100vw;
   height: 100vh;
   position: relative;
+  background-color: #0f3325;
+}
+
+.Hero-text {
+  color: white;
+  text-align: left;
+}
+
+.Hero-text h1 {
+font-size: 42pt;
+}
+
+.intro {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  background: #576490;
+}
+
+.what-i-do {
+  margin: auto;
+  background-color: white;
+  height: 700px;
+  width: 80%
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+}
+
+.what-i-do:after {
+  content: "";
+  display: table;
+  clear: both;
 }
