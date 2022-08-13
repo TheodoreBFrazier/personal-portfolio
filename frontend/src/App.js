@@ -1,6 +1,8 @@
 import "./App.css";
 
+
 import DarkMode from "./DarkMode";
+
 
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
@@ -17,7 +19,7 @@ function App() {
     <div className="App">
       <Router>
         <NavBar />
-        <DarkMode />
+<DarkMode />
         <Routes>
           
           <Route path="/" element={<HomePage />} />

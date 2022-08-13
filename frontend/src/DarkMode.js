@@ -1,5 +1,5 @@
 import "./DarkMode.css";
-import { ChangeEventHandler } from "react";
+
 
 const setDarkMode = () => {
   localStorage.setItem("theme", "dark");
@@ -26,7 +26,7 @@ if (defaultLight) {
   setLightMode();
 }
 
-const toggleTheme: ChangeEventHandler <HTMLInputElement> = (event) => {
+const toggleTheme = (event) => {
   if (event.target.checked) {
     setDarkMode();
   } else {
@@ -37,7 +37,7 @@ const toggleTheme: ChangeEventHandler <HTMLInputElement> = (event) => {
 const DarkMode = () => {
   return (
     <div className="toggle-theme-wrapper">
-      <span>Light Mode</span>
+      <span> 🌞 </span>
       <label className="toggle-theme" htmlFor="checkbox">
         <input type="checkbox" id="checkbox" 
         
@@ -47,7 +47,7 @@ const DarkMode = () => {
         />
         <div className="slider round"></div>
       </label>
-      <span> Dark Mode</span>
+      <span> 🌝 </span>
     </div>
   );
 };
