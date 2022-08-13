@@ -4,34 +4,34 @@
 
 /* Font families */
 
-@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;600;700&display=swap');
 
 h1 {
-  font-family: 'Merriweather', serif;
+  font-family: 'Karla', sans-serif;
 }
 
 h2 {
-  font-family: 'Merriweather', serif;
+  font-family: 'Karla', sans-serif;
 }
 
 h3 {
-  font-family: 'Merriweather', serif;
+  font-family: 'Karla', sans-serif;
 }
 
 h4 {
-  font-family: 'Merriweather', serif;
+  font-family: 'Karla', sans-serif;
 }
 
 h5 {
-  font-family: 'Merriweather', serif;
+  font-family: 'Karla', sans-serif;
 }
 
 h6 {
-  font-family: 'Merriweather', serif;
+  font-family: 'Karla', sans-serif;
 }
 
 p {
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Karla', sans-serif;
 }
 
 /* Home */
@@ -40,7 +40,6 @@ p {
   width: 100vw;
   height: 100vh;
   position: relative;
-  background-color: #0f3325;
 }
 
 .Hero-text {
@@ -50,6 +49,11 @@ p {
 
 .Hero-text h1 {
 font-size: 42pt;
+color: black;
+}
+
+.Hero-text p {
+  color: black;
 }
 
 .intro {
@@ -75,4 +79,27 @@ font-size: 42pt;
   content: "";
   display: table;
   clear: both;
+}
+
+.projects {
+  height: 1300px;
+  background-color: pink;
+  align-items: right;
+}
+
+.project-cards {
+  margin-top: 250px;
+  width: 1215px;
+  column-gap: 25px;
+}
+
+.projects .column {
+  float: left;
+  width: 380px;
+  height: 570px;
+ background-color: #0f9b0f;
+}
+
+.contact-me {
+  height: 587px;
 }

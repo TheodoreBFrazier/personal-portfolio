@@ -3,8 +3,8 @@ function HomePage() {
     <div className="Home">
       <section className="Hero-home">
         <div className="Hero-text">
-        <h1>Frontend-focused Web Developer</h1>
-        <p>With a passion for designing and building beauitful products.</p>
+          <h1>Frontend-focused Web Developer</h1>
+          <p>With a passion for designing and building beauitful products.</p>
         </div>
       </section>
       <section className="intro">
@@ -14,7 +14,7 @@ function HomePage() {
           <div className="column">
             <h2>Design</h2>
             <p>I am passionate about color, layout and typography.</p>
-            <br/>
+            <br />
             <h2>Tools</h2>
             <p>Sketch</p>
             <p>Figma</p>
@@ -38,16 +38,16 @@ function HomePage() {
         <p> </p>
         <p>Intro</p>
       </section>
-      <section className="resume">
-        <h1>My Resume (?)</h1>
-      </section>
       <section className="projects">
         <h1>Projects will go here</h1>
+        <div className="project-cards">
+          <div className="column">hi</div>
+          <div className="column">hi</div>
+          <div className="column">hi</div>
+        </div>
       </section>
-      <section className="Contact-me">Contact form!</section>
-      <secction className="Footer">
-        Footer here
-      </secction>
+      <section className="contact-me">Contact form!</section>
+      <secction className="footer">Footer here</secction>
     </div>
   );
 }

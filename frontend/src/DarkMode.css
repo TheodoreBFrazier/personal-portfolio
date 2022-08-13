@@ -1,0 +1,18 @@
+
+/* light theme*/
+:root {
+    --font-color: #000000;
+    --background-color: #ffffff;
+}
+
+[data-theme="dark"] {
+    --font-color: #ffffff;
+    --background-color: #111111;
+}
+
+/* values dependent on theme */
+
+body {
+    background-color: var(--background-color);
+    color: var(--font-color);
+}
