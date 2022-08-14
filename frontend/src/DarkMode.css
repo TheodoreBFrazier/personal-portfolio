@@ -29,14 +29,16 @@ body {
 
 .toggle-theme-wrapper span {
     font-size: 18pt;
+    background-color: yellow;
 }
 
 
 .toggle-theme {
     position: relative;
     display: inline-block;
-    height: 30px;
-    width: 80px;
+    height: 10px;
+    width: 30px;
+    background-color: antiquewhite;
 }
 
 .toggle-theme input {
@@ -45,7 +47,7 @@ body {
 
 .slider:before {
     background-color: aqua;
-    bottom: 5px;
+    bottom: 0px;
     content: "";
     height: 15px;
     left: 5px;
@@ -59,7 +61,7 @@ input:checked + .slider:before {
 }
 
 input:checked + .slider {
-    background-color: pink;
+    height: 10px;
 }
 
 .slider.round {

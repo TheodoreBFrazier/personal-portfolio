@@ -1,3 +1,5 @@
+
+
 function HomePage() {
   return (
     <div className="Home">
@@ -7,6 +9,7 @@ function HomePage() {
           <h3>FRONT-END DEVELOPER</h3>
           <p>With a passion for designing and building beauitful products.</p>
         </div>
+        <img src="/images/headshot.jpeg" alt="headshot"/>
       </section>
       <section className="intro">
         <h1>Frontend-focused Web Developer</h1>
