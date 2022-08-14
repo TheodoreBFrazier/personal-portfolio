@@ -21,24 +21,28 @@ body {
 /* Creating the theme toggler */
 
 .toggle-theme-wrapper {
-    display: flex;
+    display: inline-block;
     flex-direction: row;
     align-items: center;
     gap: 4px;
+    width:150px;
+    
 }
 
+/* the icon for each theme */
 .toggle-theme-wrapper span {
-    font-size: 18pt;
-    background-color: yellow;
+    font-size: 20pt;
+    bottom: 2.5px;
 }
 
 
 .toggle-theme {
     position: relative;
     display: inline-block;
-    height: 10px;
-    width: 30px;
-    background-color: antiquewhite;
+    height: 20px;
+    width: 50px;
+    background-color: pink;
+    border-radius: 15px;
 }
 
 .toggle-theme input {
@@ -47,7 +51,7 @@ body {
 
 .slider:before {
     background-color: aqua;
-    bottom: 0px;
+    bottom: 2.5px;
     content: "";
     height: 15px;
     left: 5px;

@@ -11,6 +11,8 @@ body {
 
 h1 {
   font-family: "Karla", sans-serif;
+  padding: 0px;
+  margin: 0px;
 }
 
 h2 {
@@ -40,22 +42,20 @@ p {
 .navigation {
   display: flex;
   justify-content: space-between;
-
+  height: 150px;
   margin: 0;
   padding: 0;
-  height: 150px;
   z-index: 9999;
 }
 
 .navigation ul {
   position: fixed;
   text-align: left;
-
   padding-top: 25px;
 }
 
 .navigation ul li {
-  margin-left: 0;
+  margin: 0;
   display: inline-block;
   padding: 14px 16px;
 }
@@ -67,51 +67,60 @@ p {
 /* Home */
 
 .Hero-home {
-  width: 1000px;
+  width: 100vh;
   height: 100vh;
-  position: relative;
 }
 
 .Hero-home img {
   height: 300px;
   border-radius: 50%;
-  margin-left: 885px;
-  margin-top: -230px;
 }
 
 .Hero-text {
-  text-align: left;
-  margin-top: 290px;
-  margin-left: 170px;
+  width: 100vw;
+  text-align: center;
+  margin: auto;
+}
+
+.Hero-text img {
+  margin-top: 25px;
 }
 
 .Hero-text h1 {
   font-size: 42pt;
 }
 
-.intro {
+/* Introduction */
+
+.intro .intro-text {
+  margin: auto;
+  width: 1000px;
   position: relative;
 }
 
 .what-i-do {
+  position: relative;
   column-count: 3;
   margin: auto;
   width: 75%;
 }
 
 .column {
+  margin-top: 150px;
   float: left;
   position: relative;
   border: solid transparent;
   border-width: 5px;
   border-radius: 25px;
-  background: linear-gradient(to right, #73c8a9, #373b44);
-  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
-  -webkit-mask-composite: xor;
-  mask-composite: exclude;
   background-clip: padding-box;
   width: 370px;
   height: 600px;
+  z-index: 1;
+}
+
+.column-text h2 {
+  color: white;
+  padding-top: 45px;
 }
 
 .column::after {
@@ -123,7 +132,7 @@ p {
   float: left;
   content: "";
   z-index: -1;
-  border-radius: 10px;
+  border-radius: 5px;
   background: linear-gradient(red, blue);
 }
 
@@ -133,9 +142,33 @@ p {
   clear: both;
 }
 
+.stack-row {
+  margin: auto;
+  background-color: #313335;
+  border-radius: 15px;
+  width: 1225px;
+  height: 175px;
+}
+
+/* tech stack */
+
+.tech-stack {
+  margin-top: 170px;
+}
+
+.stack-category {
+  text-align: left;
+  margin-left: 200px;
+}
+
+.stack-list {
+  margin-top: 75px;
+}
+
+/* Projects */
+
 .projects {
   height: 1300px;
-  background-color: pink;
   align-items: right;
 }
 
@@ -153,6 +186,8 @@ p {
   height: 570px;
   background-color: #0f9b0f;
 }
+
+/* Contact */
 
 .contact-me {
   height: 587px;

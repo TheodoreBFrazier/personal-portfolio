@@ -8,7 +8,7 @@ function NavBar() {
       <ul>
         <li>
           <Link to="/" className="nav-logo">
-            <h3>Theo's Logo</h3>
+            <h3>THEODORE FRAZIER</h3>
           </Link>
         </li>
         <li>
