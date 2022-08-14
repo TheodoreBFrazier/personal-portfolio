@@ -34,12 +34,25 @@ p {
   font-family: 'Karla', sans-serif;
 }
 
+
+.navigation {
+z-index: 9999;
+}
+
+
 /* Home */
 
 .Hero-home {
   width: 100vw;
   height: 100vh;
   position: relative;
+}
+
+.Hero-home img {
+  height: 300px;
+  border-radius: 50%;
+  margin-left: 885px;
+  margin-top: -230px;
 }
 
 .Hero-text {
@@ -58,7 +71,7 @@ font-size: 42pt;
   width: 100vw;
   height: 100vh;
   position: relative;
-  background: #576490;
+  
 }
 
 .what-i-do {
