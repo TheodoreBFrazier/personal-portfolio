@@ -25,7 +25,7 @@ class Contact extends React.Component {
 
   render() {
     return (
-      <form>
+      <form action="mailto:theo.frazier@icloud.com">
         <label>
           Your Name:
           <input
@@ -41,6 +41,7 @@ class Contact extends React.Component {
             type="text"
             onChange={this.handleInputChange}
           />
+          <button type="submit">Submit</button>
         </label>
       </form>
     );
