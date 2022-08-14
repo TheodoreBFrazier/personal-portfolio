@@ -8,6 +8,9 @@ class Contact extends React.Component {
       lname: "",
       email: "",
       message: "",
+      //Adding two properties to state on to check if email sent and other to check if error
+      mailSent: false,
+      error: null
     };
   }
 

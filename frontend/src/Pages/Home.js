@@ -1,3 +1,5 @@
+import Contact from "../components/ContactForm";
+
 function HomePage() {
   return (
     <div className="Home">
@@ -82,24 +84,52 @@ function HomePage() {
           <br />
           <br />
           <div className="stack-category">
-          <h3>Other essentials</h3>
+            <h3>Other essentials</h3>
+          </div>
           <div className="stack-row">
-            
             <p> NPM, Git, GitHub, Heroku, Netlify, Postman</p>
-            </div>
           </div>
         </div>
       </section>
       <section className="projects">
-        <h1>Projects will go here</h1>
-        <div className="project-cards">
-          <div className="column">hi</div>
-          <div className="column">hi</div>
-          <div className="column">hi</div>
+        <h3>Projects will go here</h3>
+        <div className="what-i-do">
+          <div className="column">
+            <div className="column-text">
+              <h2>EDUK</h2>
+              <p>I am passionate about color, layout and typography.</p>
+              <br />
+              <h2>Tools</h2>
+              <p>Sketch</p>
+              <p>Figma</p>
+            </div>
+          </div>
+          <div className="column">
+            <div className="column-text">
+              <h2>Porsche 911 Dealership</h2>
+              <p>I enjoy building applications from scratch.</p>
+              <br />
+              <h2>Languages</h2>
+              <p> HTML, CSS, JavaScript</p>
+              <br />
+              <h2>Tools</h2>
+              <p> Visual Studio Code GitHub Material ui BootStrap React</p>
+            </div>
+          </div>
+          <div className="column">
+            <div className="column-text">
+              <h2>Personal Website</h2>
+              <p> My experience </p>
+            </div>
+          </div>
         </div>
+
       </section>
-      <section className="contact-me">Contact form!</section>
-      <secction className="footer">Footer here</secction>
+      <section className="contact-me">
+      Want to Chat? 
+      <Contact />
+      </section>
+      <section className="footer">Footer here</section>
     </div>
   );
 }

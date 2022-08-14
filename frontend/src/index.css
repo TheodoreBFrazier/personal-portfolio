@@ -168,6 +168,7 @@ p {
 /* Projects */
 
 .projects {
+  margin-top: 170px;
   height: 1300px;
   align-items: right;
 }
@@ -192,3 +193,5 @@ p {
 .contact-me {
   height: 587px;
 }
+
+
