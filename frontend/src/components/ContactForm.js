@@ -1,5 +1,10 @@
 import React from "react";
 
+import axios from "axios";
+
+const API_PATH =
+  "http://localhost:1992/react-contact-form/api/contact/index.php";
+
 class Contact extends React.Component {
   constructor(props) {
     super(props);
@@ -10,16 +15,27 @@ class Contact extends React.Component {
       message: "",
       //Adding two properties to state on to check if email sent and other to check if error
       mailSent: false,
-      error: null
+      error: null,
     };
   }
 
   //form submit handler being added
 
-  handleFormSubmit(event) {
+  handleFormSubmit = (event) => {
     event.preventDefault();
-    console.log(this.state);
-  }
+    axios({
+      method: "post",
+      url: `${API_PATH}`,
+      headers: { "content-type": "application/json" },
+      data: this.state
+    })
+    .then(result => {
+      this.setState({
+        mailSent: result.data.sent
+      })
+    })
+    .catch(error => this.setState({ error: error.message }))
+  };
 
   render() {
     return (
@@ -71,7 +87,16 @@ class Contact extends React.Component {
               }
               value={this.state.message}
             ></textarea>
-            <input type="submit" onClick={event => this.handleFormSubmit(event)} value="Submit" />
+            <input
+              type="submit"
+              onClick={(event) => this.handleFormSubmit(event)}
+              value="Submit"
+            />
+            <div>
+              {this.state.mailSent && 
+              <div>Mail sent! You'll hear from me soon!</div>
+              }
+            </div>
           </form>
         </div>
       </div>
