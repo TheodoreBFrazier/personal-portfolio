@@ -14,7 +14,7 @@
 
 body {
     background-color: var(--background-color);
-    color: var(--font-color);
+   color: var(--font-color);
 }
 
 
@@ -47,11 +47,11 @@ body {
     background-color: aqua;
     bottom: 5px;
     content: "";
-    height: 25px;
+    height: 15px;
     left: 5px;
     position: absolute;
     transition: 0.5s;
-    width: 25px;
+    width: 15px;
 }
 
 input:checked + .slider:before {
@@ -59,11 +59,11 @@ input:checked + .slider:before {
 }
 
 input:checked + .slider {
-    background-color: aquamarine;
+    background-color: pink;
 }
 
 .slider.round {
-    border-radius: 20px;
+    border-radius: 10px;
 }
 
 .slider.round:before {

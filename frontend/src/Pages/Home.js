@@ -3,7 +3,8 @@ function HomePage() {
     <div className="Home">
       <section className="Hero-home">
         <div className="Hero-text">
-          <h1>Frontend-focused Web Developer</h1>
+          <h1>THEODORE FRAZIER</h1>
+          <h3>FRONT-END DEVELOPER</h3>
           <p>With a passion for designing and building beauitful products.</p>
         </div>
       </section>
