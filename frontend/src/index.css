@@ -1,49 +1,73 @@
-
+body {
+  margin: 0;
+  padding: 0;
+}
 
 /* TYPOGRAPHY */
 
 /* Font families */
 
-@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;600;700&display=swap");
 
 h1 {
-  font-family: 'Karla', sans-serif;
+  font-family: "Karla", sans-serif;
 }
 
 h2 {
-  font-family: 'Karla', sans-serif;
+  font-family: "Karla", sans-serif;
 }
 
 h3 {
-  font-family: 'Karla', sans-serif;
+  font-family: "Karla", sans-serif;
 }
 
 h4 {
-  font-family: 'Karla', sans-serif;
+  font-family: "Karla", sans-serif;
 }
 
 h5 {
-  font-family: 'Karla', sans-serif;
+  font-family: "Karla", sans-serif;
 }
 
 h6 {
-  font-family: 'Karla', sans-serif;
+  font-family: "Karla", sans-serif;
 }
 
 p {
-  font-family: 'Karla', sans-serif;
+  font-family: "Karla", sans-serif;
 }
-
 
 .navigation {
-z-index: 9999;
+  display: flex;
+  justify-content: space-between;
+
+  margin: 0;
+  padding: 0;
+  height: 150px;
+  z-index: 9999;
 }
 
+.navigation ul {
+  position: fixed;
+  text-align: left;
+
+  padding-top: 25px;
+}
+
+.navigation ul li {
+  margin-left: 0;
+  display: inline-block;
+  padding: 14px 16px;
+}
+
+.navigation ul li a {
+  text-decoration: none;
+}
 
 /* Home */
 
 .Hero-home {
-  width: 100vw;
+  width: 1000px;
   height: 100vh;
   position: relative;
 }
@@ -62,28 +86,45 @@ z-index: 9999;
 }
 
 .Hero-text h1 {
-font-size: 42pt;
+  font-size: 42pt;
 }
 
-
-
 .intro {
-  width: 100vw;
-  height: 100vh;
   position: relative;
-  
 }
 
 .what-i-do {
+  column-count: 3;
   margin: auto;
-  background-color: white;
-  height: 700px;
-  width: 80%
+  width: 75%;
 }
 
 .column {
   float: left;
-  width: 33.33%;
+  position: relative;
+  border: solid transparent;
+  border-width: 5px;
+  border-radius: 25px;
+  background: linear-gradient(to right, #73c8a9, #373b44);
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  background-clip: padding-box;
+  width: 370px;
+  height: 600px;
+}
+
+.column::after {
+  position: absolute;
+  top: -4px;
+  bottom: -4px;
+  left: -4px;
+  right: -4px;
+  float: left;
+  content: "";
+  z-index: -1;
+  border-radius: 10px;
+  background: linear-gradient(red, blue);
 }
 
 .what-i-do:after {
@@ -99,16 +140,18 @@ font-size: 42pt;
 }
 
 .project-cards {
+  border: solid 2px black;
   margin-top: 250px;
   width: 1215px;
   column-gap: 25px;
 }
 
 .projects .column {
+  border: solid 2px black;
   float: left;
   width: 380px;
   height: 570px;
- background-color: #0f9b0f;
+  background-color: #0f9b0f;
 }
 
 .contact-me {
