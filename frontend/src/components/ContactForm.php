@@ -1,10 +1,10 @@
 <?php
 
 
-if($_POST["message"]) {
+if($_POST["userName" && "message"]) {
 
 
-mail("your@email.address", "Here is the subject line",
+mail("theo.frazier@icloud.com", "Here is the subject line",
 
 
 $_POST["insert your message here"]. "From: an@email.address");

@@ -87,7 +87,12 @@ function HomePage() {
             <h3>Other essentials</h3>
           </div>
           <div className="stack-row">
-            <p> NPM, Git, GitHub, Heroku, Netlify, Postman</p>
+            <img src="/images/git.png" alt="git-logo"/>
+            <img src="/images/github.png" alt="github-logo" />
+            <img src="/images/netlify.png" alt="netlify-logo" />
+            <img src="/images/npm.png" alt="npm-logo" />
+            <img src="/images/postman.png" alt="postman-logo" />
+        
           </div>
         </div>
       </section>

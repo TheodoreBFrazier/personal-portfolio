@@ -165,6 +165,10 @@ p {
   margin-top: 75px;
 }
 
+.stack-list img {
+  height: 50px;
+}
+
 /* Projects */
 
 .projects {
