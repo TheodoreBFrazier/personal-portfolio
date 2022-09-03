@@ -6,7 +6,7 @@ function HomePage() {
       <section className="Hero-home">
         <div className="Hero-text">
           <h1>THEODORE FRAZIER</h1>
-          <h3>FRONT-END DEVELOPER</h3>
+          <h3>FRONT-END DEVELOPER!</h3>
           <p>With a passion for designing and building beauitful products.</p>
           <img src="/images/headshot.jpeg" alt="headshot" />
         </div>
@@ -78,7 +78,8 @@ function HomePage() {
             <h3>Back-end</h3>
           </div>
           <div className="stack-row">
-            <p> NodeJS, SQL, Postgres, </p>
+            <img src="/images/nodejs.png" alt="nodejs-logo" />
+            <img src="/images/postgresql.png" alt="postgres-logo" />
           </div>
           <br />
           <br />
@@ -87,12 +88,11 @@ function HomePage() {
             <h3>Other essentials</h3>
           </div>
           <div className="stack-row">
-            <img src="/images/git.png" alt="git-logo"/>
+            <img src="/images/git.png" alt="git-logo" />
             <img src="/images/github.png" alt="github-logo" />
             <img src="/images/netlify.png" alt="netlify-logo" />
             <img src="/images/npm.png" alt="npm-logo" />
             <img src="/images/postman.png" alt="postman-logo" />
-        
           </div>
         </div>
       </section>
@@ -128,11 +128,10 @@ function HomePage() {
             </div>
           </div>
         </div>
-
       </section>
       <section className="contact-me">
-      Want to Chat? 
-      <Contact />
+        Want to Chat?
+        <Contact />
       </section>
       <section className="footer">Footer here</section>
     </div>

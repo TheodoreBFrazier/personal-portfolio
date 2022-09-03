@@ -27,20 +27,21 @@ class Contact extends React.Component {
       method: "post",
       url: `${API_PATH}`,
       headers: { "content-type": "application/json" },
-      data: this.state
+      data: this.state,
     })
-    .then(result => {
-      this.setState({
-        mailSent: result.data.sent
+      .then((result) => {
+        this.setState({
+          mailSent: result.data.sent,
+        });
       })
-    })
-    .catch(error => this.setState({ error: error.message }))
+      .catch((error) => this.setState({ error: error.message }));
   };
 
   render() {
     return (
       <div className="form">
         <p>Contact Me</p>
+        <br />
         <div>
           <form action="/action_page.php">
             <label>First Name</label>
@@ -53,7 +54,11 @@ class Contact extends React.Component {
               value={this.state.fname}
               onChange={(event) => this.setState({ fname: event.target.value })}
             />
+
+            <br />
+
             <label>Last Name</label>
+            <br />
             <input
               type="text"
               id="lname"
@@ -64,7 +69,10 @@ class Contact extends React.Component {
               onChange={(event) => this.setState({ lname: event.target.value })}
             />
 
+            <br />
+
             <label>Email</label>
+            <br />
             <input
               type="email"
               id="email"
@@ -75,7 +83,10 @@ class Contact extends React.Component {
               onChange={(event) => this.setState({ email: event.target.value })}
             />
 
+            <br />
+
             <label>Subject</label>
+            <br />
             <textarea
               id="subject"
               name="subject"
@@ -87,15 +98,16 @@ class Contact extends React.Component {
               }
               value={this.state.message}
             ></textarea>
+
             <input
               type="submit"
               onClick={(event) => this.handleFormSubmit(event)}
               value="Submit"
             />
             <div>
-              {this.state.mailSent && 
-              <div>Mail sent! You'll hear from me soon!</div>
-              }
+              {this.state.mailSent && (
+                <div>Mail sent! You'll hear from me soon!</div>
+              )}
             </div>
           </form>
         </div>

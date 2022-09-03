@@ -165,7 +165,9 @@ p {
   margin-top: 75px;
 }
 
-.stack-list img {
+.stack-list .stack-row img {
+margin-top: 50px;
+margin: 50px;
   height: 50px;
 }
 
@@ -198,4 +200,37 @@ p {
   height: 587px;
 }
 
+.form {
+  margin: auto;
+  background-color: #0f9b0f;
+  width: 50%;
+}
 
+.form label, textarea, button {
+  font-family: "Karla", sans-serif;
+}
+
+.form label {
+  margin: 0 8px;
+  font-size: 14px;
+  color: white;
+}
+
+.form input, textarea {
+  padding: 8px 10px;
+  margin: 3px 8px 16px 8px;
+  background-color: rgba(222, 239, 248, 0.877);
+  border: 0px transparent;
+  border-radius: 5px;
+}
+
+.form button {
+  padding: 8px 14px;
+  margin: 20px 8px 0 0;
+  border-width: 0px;
+  border-radius: 5px;
+  color: white;
+  background-color: #b69269;
+  transition: 0.3s;
+  z-index: 1;
+}
